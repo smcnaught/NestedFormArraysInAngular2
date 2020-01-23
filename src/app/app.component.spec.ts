@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'duplicatingHtmlOnClick'`, () => {
+  it(`should have as title 'angularNestedFormArrays'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('duplicatingHtmlOnClick');
+    expect(app.title).toEqual('angularNestedFormArrays');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('duplicatingHtmlOnClick app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angularNestedFormArrays app is running!');
   });
 });

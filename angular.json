@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "duplicatingHtmlOnClick": {
+    "angularNestedFormArrays": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/duplicatingHtmlOnClick",
+            "outputPath": "dist/angularNestedFormArrays",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "duplicatingHtmlOnClick:build"
+            "browserTarget": "angularNestedFormArrays:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "duplicatingHtmlOnClick:build:production"
+              "browserTarget": "angularNestedFormArrays:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "duplicatingHtmlOnClick:build"
+            "browserTarget": "angularNestedFormArrays:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "duplicatingHtmlOnClick:serve"
+            "devServerTarget": "angularNestedFormArrays:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "duplicatingHtmlOnClick:serve:production"
+              "devServerTarget": "angularNestedFormArrays:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "duplicatingHtmlOnClick"
+  "defaultProject": "angularNestedFormArrays"
 }
